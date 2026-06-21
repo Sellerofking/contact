@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>AadhaarBAS APK Download</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- FontAwesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+    --bg: #0f172a;
+    --card: rgba(255, 255, 255, 0.05);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --text: #ffffff;
+    --text-muted: #94a3b8;
+    --primary: #3b82f6;
+    --secondary: #06b6d4;
+    --whatsapp: #25D366;
+    --danger: #ef4444;
+    --success: #10b981;
+    --purple: #a855f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    padding-bottom: 100px;
+    overflow-x: hidden;
+}
+
+/* Background Glow Effects */
+.glow-1, .glow-2 {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: -1;
+    opacity: 0.4;
+}
+.glow-1 { width: 300px; height: 300px; background: var(--primary); top: -50px; left: -50px; }
+.glow-2 { width: 300px; height: 300px; background: var(--secondary); bottom: -50px; right: -50px; }
+
+.container {
+    max-width: 480px;
+    margin: auto;
+    padding: 20px 15px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+}
+.hero-icon {
+    font-size: 42px;
+    color: var(--secondary);
+    margin-bottom: 15px;
+    animation: bounce 2s infinite;
+    text-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+}
+.hero h1 { font-size: 26px; font-weight: 700; }
+.hero p { font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
+
+/* Buttons */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+    transition: transform 0.2s;
+}
+.btn i { font-size: 18px; }
+.btn:active { transform: scale(0.96); }
+
+.btn-wa {
+    background: linear-gradient(135deg, #128C7E, var(--whatsapp));
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+/* Cards */
+.card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.icon-box {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card h2 { font-size: 17px; font-weight: 600; }
+.card p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+/* Notice Box */
+.notice {
+    margin-top: 15px;
+    padding: 12px 15px;
+    background: rgba(239, 68, 68, 0.1);
+    border-left: 4px solid var(--danger);
+    border-radius: 8px;
+    font-size: 13px;
+    color: #fca5a5;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.notice i { font-size: 16px; margin-top: 2px; color: var(--danger); }
+
+/* Lists */
+ul { padding-left: 0; list-style: none; margin-top: 12px; }
+li { 
+    font-size: 13px; 
+    color: var(--text-muted); 
+    margin-bottom: 10px;
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+li i {
+    color: var(--primary);
+    font-size: 14px;
+    background: rgba(59, 130, 246, 0.1);
+    padding: 4px;
+    border-radius: 50%;
+}
+
+/* Images */
+.screenshot {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 12px;
+    border: 1px solid var(--card-border);
+}
+
+/* Sticky Footer */
+.sticky {
+    position: fixed;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 100;
+}
+.sticky .btn {
+    padding: 16px;
+    font-size: 16px;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+</style>
+</head>
+<body>
+
+<div class="glow-1"></div>
+<div class="glow-2"></div>
+
+<div class="container">
+    
+    <!-- Hero Section -->
+    <div class="hero">
+        <i class="fa-solid fa-box-open hero-icon"></i>
+        <h1>AadhaarBAS APK</h1>
+        <p>Download the latest version securely.</p>
+        <a href="https://github.com/Sellerofking/Sell/raw/refs/heads/main/AadhaarBAS_10.0791_FullFix.apk" class="btn">
+            <i class="fa-solid fa-download"></i> Download APK
+        </a>
+    </div>
+
+    <!-- Error Handling -->
+    <div class="card">
+        <div class="card-header">
+            <div class="icon-box"><i class="fa-solid fa-circle-exclamation" style="color: var(--danger);"></i></div>
+            <h2>App Not Installing?</h2>
+        </div>
+        <p>If you face a package conflict error during installation:</p>
+        <img src="https://raw.githubusercontent.com/Sellerofking/Landing/refs/heads/main/Screenshot_2026-06-20-07-20-46-614_com.google.android.packageinstaller-edit.jpg" class="screenshot" alt="Error Screenshot">
+        <div class="notice">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>Uninstall the old AadhaarBAS app first, then install this new version.</span>
+        </div>
+    </div>
+
+    <!-- Play Protect -->
+    <div class="card">
+        <div class="card-header">
+            <div class="icon-box"><i class="fa-solid fa-shield-halved" style="color: var(--success);"></i></div>
+            <h2>Play Protect Warning</h2>
+        </div>
+        <p>If Google Play Protect blocks the installation, tap <b>More Details</b> and select <b>Install Anyway</b>.</p>
+    </div>
+
+    <!-- Mock Location -->
+    <div class="card">
+        <div class="card-header">
+            <div class="icon-box"><i class="fa-solid fa-location-dot" style="color: var(--primary);"></i></div>
+            <h2>Mock Location Setup</h2>
+        </div>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> Install any <b>Fake GPS</b> app from Play Store</li>
+            <li><i class="fa-solid fa-check"></i> Enable <b>Developer Options</b> in device settings</li>
+            <li><i class="fa-solid fa-check"></i> Find & tap <b>Select Mock Location App</b></li>
+            <li><i class="fa-solid fa-check"></i> Choose your installed <b>Fake GPS app</b></li>
+            <li><i class="fa-solid fa-check"></i> Open <b>AadhaarBAS</b> & give attendance</li>
+        </ul>
+    </div>
+
+    <!-- Support Section -->
+    <div class="card">
+        <div class="card-header">
+            <div class="icon-box"><i class="fa-solid fa-headset" style="color: var(--purple);"></i></div>
+            <h2>Need Support?</h2>
+        </div>
+        <p style="margin-bottom: 15px;">Facing issues? Chat with us directly.</p>
+        <a href="https://wa.me/447846758611" class="btn btn-wa">
+            <i class="fa-brands fa-whatsapp"></i> Message Seller King
+        </a>
+    </div>
+
+</div>
+
+<!-- Sticky Download -->
+<div class="sticky">
+    <a href="https://github.com/Sellerofking/Sell/raw/refs/heads/main/AadhaarBAS_10.0791_FullFix.apk" class="btn">
+        <i class="fa-solid fa-download"></i> Download Latest APK
+    </a>
+</div>
+
+</body>
+</html>
+
