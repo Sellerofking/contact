@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Support</title>
+<title>Contact Support & Get Key</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -48,6 +48,7 @@ p { font-size: 14px; color: #94a3b8; margin-bottom: 25px; }
 .btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     padding: 16px;
     border-radius: 14px;
@@ -61,10 +62,30 @@ p { font-size: 14px; color: #94a3b8; margin-bottom: 25px; }
 .btn:active { transform: scale(0.96); }
 .btn i { font-size: 24px; }
 
+/* Main Key Button with Animation */
+.btn-key {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    animation: glow-pulse 2s infinite alternate;
+    margin-bottom: 25px; /* Thoda extra space diya h neeche wale buttons se pehle */
+}
+
+/* Key Button Animation */
+@keyframes glow-pulse {
+    0% { 
+        box-shadow: 0 0 10px rgba(236, 72, 153, 0.4); 
+        transform: scale(1); 
+    }
+    100% { 
+        box-shadow: 0 0 25px rgba(236, 72, 153, 0.9); 
+        transform: scale(1.03); 
+    }
+}
+
 .btn-wa { background: linear-gradient(135deg, #128C7E, var(--wa)); }
 .btn-tg { background: linear-gradient(135deg, #00aaff, var(--tg)); }
 
-.back { display: block; margin-top: 20px; color: #94a3b8; text-decoration: none; font-size: 14px; }
+.back { display: block; margin-top: 20px; color: #94a3b8; text-decoration: none; font-size: 14px; transition: color 0.3s; }
+.back:hover { color: #fff; }
 </style>
 </head>
 <body>
@@ -72,7 +93,11 @@ p { font-size: 14px; color: #94a3b8; margin-bottom: 25px; }
 <div class="container">
     <i class="fa-solid fa-headset icon-main"></i>
     <h1>Get in Touch</h1>
-    <p>Facing any issues with installation or setup? Contact us below.</p>
+    <p>Facing any issues with installation or setup? Contact us below or get your key.</p>
+
+    <a href="#" class="btn btn-key">
+        <i class="fa-solid fa-key"></i> Proceed to Get Key
+    </a>
 
     <a href="https://wa.me/447846758611" class="btn btn-wa">
         <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
@@ -82,7 +107,6 @@ p { font-size: 14px; color: #94a3b8; margin-bottom: 25px; }
         <i class="fa-brands fa-telegram"></i> Message on Telegram
     </a>
 
-    <!-- Yahan tum apni main website ka link daal dena -->
     <a href="https://sellerofking.github.io/Landing/" class="back">
         <i class="fa-solid fa-arrow-left"></i> Back to Home
     </a>
